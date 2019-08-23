@@ -1,11 +1,10 @@
 package errmsg
 
 import (
-	"errors"
+	"fmt"
 	"path/filepath"
 	"runtime"
 	"strconv"
-	"strings"
 )
 
 // RecordSep delineates error records
@@ -43,16 +42,5 @@ func here() Location {
 // The `Location` arg is assumed to be the Location. The `Kind` arg is the
 // Kind of the error.
 func New(msg string) error {
-
-	l := here()
-
-	var b strings.Builder
-
-	b.WriteString(msg)
-	b.WriteString(" @ ")
-	b.WriteString(string(l))
-	b.WriteString(";")
-	b.WriteString(RecordSep)
-
-	return errors.New(b.String())
+	return fmt.Errorf("%s @ %s\036", msg, here())
 }
