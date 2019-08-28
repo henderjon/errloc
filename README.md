@@ -13,4 +13,4 @@ A simple way of creating errors with locations.
 The new `Unwrap` interface is cool and all, but I've always found file:line messages to be helpful in debugging.
 
 
-[example](https://play.golang.org/p/r2Bkx_r5-fj)
+![play.golang.org](https://play.golang.org/p/r2Bkx_r5-fj)
