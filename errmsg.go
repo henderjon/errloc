@@ -42,5 +42,5 @@ func here() Location {
 // The `Location` arg is assumed to be the Location. The `Kind` arg is the
 // Kind of the error.
 func New(msg string) error {
-	return fmt.Errorf("%s @ %s%s", msg, here(), RecordSep)
+	return fmt.Errorf("%s [%s]%s", msg, here(), RecordSep)
 }
