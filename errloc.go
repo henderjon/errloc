@@ -20,7 +20,7 @@ var (
 // of the error.
 type Location string
 
-// Here returns the file:line at the point of invocation
+// Here returns the file:line at the point of invocation. This is purely sugar.
 func Here() Location {
 	return here(2)
 }
