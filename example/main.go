@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/henderjon/errmsg"
+	"github.com/henderjon/errloc"
 )
 
 func main() {
-	fmt.Println(errmsg.New("this is a serious problem"))
-	fmt.Println(errmsg.Here())
+	fmt.Println(errloc.New("this is a serious problem"))
+	fmt.Println(errloc.Here())
 }

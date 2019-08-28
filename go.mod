@@ -1,4 +1,4 @@
-module github.com/henderjon/errmsg
+module github.com/henderjon/errloc
 
 go 1.12
 

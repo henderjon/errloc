@@ -1,4 +1,4 @@
-package errmsg
+package errloc
 
 import (
 	"fmt"
@@ -17,19 +17,13 @@ type Location string
 
 // Here returns the file:line at the point of invocation
 func Here() Location {
-	var l Location
-	_, file, line, ok := runtime.Caller(1)
-	if ok {
-		path := filepath.Base(file)
-		l = Location(path + ":" + strconv.Itoa(line))
-	}
-	return l
+	return here(2)
 }
 
 // here returns the file:line at the point of invocation
-func here() Location {
+func here(depth int) Location {
 	var l Location
-	_, file, line, ok := runtime.Caller(2)
+	_, file, line, ok := runtime.Caller(depth)
 	if ok {
 		path := filepath.Base(file)
 		l = Location(path + ":" + strconv.Itoa(line))
@@ -41,6 +35,6 @@ func here() Location {
 // to be the error message. The `error`/`Error` arg is assumed to be a Prev.
 // The `Location` arg is assumed to be the Location. The `Kind` arg is the
 // Kind of the error.
-func New(msg string) error {
-	return fmt.Errorf("%s [%s]%s", msg, here(), RecordSep)
+func New(e string) error {
+	return fmt.Errorf("%s\n\t%s%s", here(2), e, RecordSep)
 }

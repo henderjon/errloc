@@ -1,4 +1,4 @@
-# errmsg
+# errloc
 
 A simple way of creating errors with locations.
 
