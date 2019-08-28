@@ -7,8 +7,13 @@ import (
 	"strconv"
 )
 
-// RecordSep delineates error records
-const RecordSep = "\036" // byte(30) || "\x1e" ... is the ascii Record Separator (RS) character
+// lammertbies.nl/comm/info/ascii-characters.html
+var (
+	// RecordSep delineates error records
+	RecordSep = "\036" // byte(30) || "\x1e" ... is the ascii Record Separator (RS) character
+	// UnitSep is used to make the error more readable
+	UnitSep = "\n\t" // "\037" byte(31) || "\x1f" ... is the ascii Unit Separator (US) character
+)
 
 // Location is the name:line of a file. Ideally returned by Here(). In usage
 // it'll give you the file:line of the invocation of Here() to be passed as part
@@ -36,5 +41,5 @@ func here(depth int) Location {
 // The `Location` arg is assumed to be the Location. The `Kind` arg is the
 // Kind of the error.
 func New(e string) error {
-	return fmt.Errorf("%s\n\t%s%s", here(2), e, RecordSep)
+	return fmt.Errorf("%s%s%s%s", here(2), UnitSep, e, RecordSep)
 }
