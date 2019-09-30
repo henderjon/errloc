@@ -43,3 +43,8 @@ func here(depth int) Location {
 func New(e string) error {
 	return fmt.Errorf("%s%s%s%s", here(2), UnitSep, e, RecordSep)
 }
+
+// AddLoc adds a location value to an existing error
+func AddLoc(e error) error {
+	return fmt.Errorf("%s: %w", here(2), e)
+}
