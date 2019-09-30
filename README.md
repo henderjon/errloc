@@ -1,9 +1,13 @@
 [![GoDoc](https://godoc.org/github.com/henderjon/errloc?status.svg)](https://godoc.org/github.com/henderjon/errloc)
 [![License: BSD-3](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://img.shields.io/badge/license-BSD--3-blue.svg)
-[![Go Report Card](https://goreportcard.com/badge/github.com/henderjon/errloc)](https://goreportcard.com/report/github.com/henderjon/errloc)
-[![Build Status](https://travis-ci.org/henderjon/errloc.svg?branch=dev)](https://travis-ci.org/henderjon/errloc)
 ![tag](https://img.shields.io/github/tag/henderjon/errloc.svg)
 ![release](https://img.shields.io/github/release/henderjon/errloc.svg)
+
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/henderjon/errloc)](https://goreportcard.com/report/github.com/henderjon/errloc)
+[![Build Status](https://travis-ci.org/henderjon/errloc.svg?branch=dev)](https://travis-ci.org/henderjon/errloc)
+[![Maintainability](https://api.codeclimate.com/v1/badges/890c65048112fbab8fc2/maintainability)](https://codeclimate.com/github/henderjon/errloc/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/890c65048112fbab8fc2/test_coverage)](https://codeclimate.com/github/henderjon/errloc/test_coverage)
 
 # errloc
 
