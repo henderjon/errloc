@@ -8,7 +8,7 @@ import (
 )
 
 func TestNew(t *testing.T) {
-	expected := errors.New("errloc_test.go:13\n\tsomething is wrong\x1e")
+	expected := errors.New("errloc_test.go:13\n\tsomething is wrong\n")
 
 	e := New("something is wrong")
 	if diff := cmp.Diff(e.Error(), expected.Error()); diff != "" {
