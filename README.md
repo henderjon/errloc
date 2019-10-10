@@ -6,8 +6,8 @@
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/henderjon/errloc)](https://goreportcard.com/report/github.com/henderjon/errloc)
 [![Build Status](https://travis-ci.org/henderjon/errloc.svg?branch=dev)](https://travis-ci.org/henderjon/errloc)
-[![Maintainability](https://api.codeclimate.com/v1/badges/890c65048112fbab8fc2/maintainability)](https://codeclimate.com/github/henderjon/errloc/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/890c65048112fbab8fc2/test_coverage)](https://codeclimate.com/github/henderjon/errloc/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a0aba8dc38e1b32355f0/maintainability)](https://codeclimate.com/github/henderjon/errloc/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a0aba8dc38e1b32355f0/test_coverage)](https://codeclimate.com/github/henderjon/errloc/test_coverage)
 
 # errloc
 
